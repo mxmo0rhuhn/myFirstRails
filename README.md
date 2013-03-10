@@ -1,4 +1,4 @@
 myFirstRails
 ============
 
-First Rails Applicaation
+First Rails Application

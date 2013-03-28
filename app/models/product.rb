@@ -5,7 +5,8 @@ class Product < ActiveRecord::Base
 
   validates_numericality_of :price
 
-  validates :image_url, :format => {:with => %r{((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)}i, :message => 'not valid'}
+# Lässt sich nicht vereinen mit dem seed
+  #validates :image_url, :format => {:with => %r{((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)}i, :message => 'not valid'}
 
   validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
 

@@ -12,6 +12,7 @@
     border-bottom: 3px dotted #77d;
   }
 
+
   /* An entry in the store catalog */
   .entry {
     overflow: auto;
@@ -41,6 +42,9 @@
       margin-bottom: 0.8em; 
     }
 
+  form, div { 
+ 	display: inline;
+}
     .price {
       color: #44a;
       font-weight: bold;
